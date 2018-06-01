@@ -5,4 +5,33 @@
 #####################################################################
 
 2-1 introduction to NSX
-  
+  Virtualizing Key Network Functions
+    Logical Switches
+      vxlan capability              // establish l2 ethernet network can you actually teriverse a l3 physical network
+    Distributed Logical Router    // two vm are in different network but they are on the same host there traffic never to leave that host
+    Distributed Firewall          // microsegmentation , filer rules that enforced vNIC level , if traffic is leaving a VM and is bound for some other VM that is connected to the same logical sw
+    Edge Services                 // 
+      Firewall 
+      Load Balacer
+      IPSEC
+      L2
+      SSL VPN
+      MORE
+    integration with third Party Vendors
+    REST API for Cloud Management Platforms
+  The Multiple Planes of NSX
+    Data Plane              // Logical Switches, Distributed Logical Router, Distributed Firewall, NSX Edge
+                            // component that are responsible for passing traffic, if they fail there is an impact on service 
+    Control Plane           // DLR Control VM, NSX Controller
+                            // dont have direct impact on traffic if they fail
+    Management Plane        // vCenter, NSX Manager (Always has a 1-to-1 relationship with vCenter)
+                            // no impact on network traffic if they fail, they just impact on our ability to manage
+  what are Kernel Modules?
+    Kernel Modules are made up of VIBs.     // piece of software 
+    they run directly within the hypervisor
+    
+  NSX Kernel Modules are pushed to hosts by NSX Manager
+    VXLAN
+    Distributed Logical Router
+    Distributed Firewall
+   
