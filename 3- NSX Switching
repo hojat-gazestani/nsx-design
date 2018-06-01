@@ -1,0 +1,29 @@
+3-1 Logical Switch Fundamentals
+3-2 Transport Zones
+3-3 NSX Controller Cluster
+3-4 Replication Modes
+3-5 Impact of VXLAN on the Physical Network
+
+#######################################################################################################
+
+3-1 Logical Switch Fundamentals
+  Standard Virtual Switch
+  Distributed Virtual Switch
+  Logical Switch
+    is based on a kernel module
+    is backed by the vSphere Distributed Switch
+    identified using a pool of VNIs
+    provides VTEP functionality to support VXLAN
+    can span multiple Distrbuted Virtual Switches
+   
+  VXALN
+    Provides tunneled transport over the physical network
+    allows L2 networks to span L3 devices
+    VNIs provide segmentation similar to VLAN
+    
+    ARP Reauest Without VXLAN                               // ????????????????????????????????
+    
+--------------------------------------------------------------------------------------------------------------
+
+
+  
