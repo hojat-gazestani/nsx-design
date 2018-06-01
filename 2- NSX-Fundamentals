@@ -37,3 +37,18 @@
     
   -------------------------------------------------------------------------------------------
    
+2-2 VXLAN and VTEPs
+  the VTEP is required for VXLAN
+    VMkernel port
+    Ecnapsulates and De-capsulates traffic
+    adds headers including VNI
+          ----------------------------------------------------------------------  
+          |-------------  --------  ---------                                   |
+          ||  Payload  |  |  IP  |  |  MAC  |   |  VXLAN  |  |  IP  |  |  MAC  ||
+          |-------------  --------  ---------                                   |
+          ----------------------------------------------------------------------
+      The VNI field in the VXLAN header is used to drop the frame on the corrct Logical Switch
+      Look at picture 2-2 VTEP
+  -----------------------------------------------------------------------------------------------------------
+  
+
