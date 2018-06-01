@@ -20,7 +20,7 @@ vSphere Standard Switches
   NIC Teaming by Source MAC Hash
   NIC Teaming by IP Hash
   
-  Traffic Shaping
+  Traffic Shaping                       // Peak Bandwidth, Average Bandwith, barse zise
   
 vSphere Distributed Switches
 Virtual Switch Features
