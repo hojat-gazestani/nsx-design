@@ -37,7 +37,7 @@ vSphere Standard Switches
     Provisioning TCP/IP Stack
       cold migration, cloning, and Snapshots
     Create a custom TCP/IP Stacks and associate VMkernel ports with it
-  
+ 
 vSphere Distributed Switches
   Scalability
   
@@ -50,6 +50,22 @@ vSphere Distributed Switches
   LACP
     
 Virtual Switch Features
-
-
+  Standard
+    CDP
+    host Level Rollback
+    
+  Distributed
+    Distributed Switch Rollback
+    CDP
+    LLDP
+    Network I/O Control(NIOC)
+      shares
+      limit
+      reservations
+    Traffic Filtering and Tagging
+    Network Health Check
+    Netlflow
+      report traffic information to a centerlized collector
+    Port Mirroring
+    
 
