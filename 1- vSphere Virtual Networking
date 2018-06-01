@@ -1,4 +1,10 @@
-Virtual Networking
+1-1 Virtual Networking
+1-2 vSphere Standard Switches
+1-3 vSphere Distributed Switches
+1-4 Virtual Switch Features
+
+##############################################################################################
+1-1 Virtual Networking
   VM
   vNIC                      // provide connectivity to VMs
   Port Group                // define settings like VLAN membership, security policy, VM on same port group can commiunicate with each other without that trafic leaving the ESXi host
@@ -10,9 +16,9 @@ Virtual Networking
     Management vmk0
     vMotion vmk1
     FT Logging vmk2
+  -----------------------------------------------------------------------------------------------------
   
-  
-vSphere Standard Switches
+1-2 vSphere Standard Switches
   VMNIC Link State Failure              // recognize by vSphere easily
   Upstream Device Failure               // recognize by vSphere easily
   
@@ -37,8 +43,9 @@ vSphere Standard Switches
     Provisioning TCP/IP Stack
       cold migration, cloning, and Snapshots
     Create a custom TCP/IP Stacks and associate VMkernel ports with it
+  --------------------------------------------------------------------------------------------------------------
  
-vSphere Distributed Switches
+1-3 vSphere Distributed Switches
   Scalability
   
   Private VLANs
@@ -48,8 +55,9 @@ vSphere Distributed Switches
   
   Route Based on Physical NIC Load
   LACP
+  -------------------------------------------------------------------------------------------------------------
     
-Virtual Switch Features
+1-4 Virtual Switch Features
   Standard
     CDP
     host Level Rollback
