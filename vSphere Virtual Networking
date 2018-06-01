@@ -13,5 +13,11 @@ Virtual Networking
   
   
 vSphere Standard Switches
+  VMNIC Link State Failure              // recognize by vSphere easily
+  Upstream Device Failure               // recognize by vSphere easily
+  NIC Teaming by Originating Port ID    //
+  NIC Teaming by Source MAC Hash
+  NIC Teaming by IP Hash
+  
 vSphere Distributed Switches
 Virtual Switch Features
