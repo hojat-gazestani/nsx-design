@@ -1,6 +1,6 @@
 Virtual Networking
   VM
-  vNIC                      // vm use this to send some packet to the network
+  vNIC                      // provide connectivity to VMs
   Port Group                // define settings like VLAN membership, security policy, VM on same port group can commiunicate with each other without that trafic leaving the ESXi host
   vmnic                     // Physical up-link, trafic need to send out external network or some VM on deffernt network
   vSphere Standard Switch   // MTU = 9000
