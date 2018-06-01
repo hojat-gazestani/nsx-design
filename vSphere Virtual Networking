@@ -23,6 +23,23 @@ vSphere Standard Switches
   Traffic Shaping                       // Peak Bandwidth, Average Bandwith, barse zise
   
   Security Setting
+    /* Switch setting are global, and are overridden by port group level */
+    Forged Transmits                    // Allow MAC spoofing for outbound traffic
+    MAC Address Changes                 // Allow MAC spooging for inbound traffic
+    Promiscuous Mode                    // Allows sniffing of all traffic on the virtual switch
+    
+  Multiple TCP/IP Stacks
+    Default TCP/IP Stack is used for management, and all other types of traffic by default
+    vMotion TCP/IP Stack
+      you can configure vMotion to use this stack
+      this allows vMotion traffic to be pointed to a different IP Network
+      this can be useful for features like long distance vMotion
+    Provisioning TCP/IP Stack
+      cold migration, cloning, and Snapshots
+    Create a custom TCP/IP Stacks and associate VMkernel ports with it
   
 vSphere Distributed Switches
 Virtual Switch Features
+
+
+
