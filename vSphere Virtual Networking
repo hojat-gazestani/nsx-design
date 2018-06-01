@@ -39,6 +39,16 @@ vSphere Standard Switches
     Create a custom TCP/IP Stacks and associate VMkernel ports with it
   
 vSphere Distributed Switches
+  Scalability
+  
+  Private VLANs
+    Isolated
+    Community
+    Promiscuous
+  
+  Route Based on Physical NIC Load
+  LACP
+    
 Virtual Switch Features
 
 
