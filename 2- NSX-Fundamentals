@@ -35,7 +35,7 @@
     Distributed Logical Router
     Distributed Firewall
     
-  -------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------  
    
 2-2 VXLAN and VTEPs
   the VTEP is required for VXLAN
@@ -51,4 +51,6 @@
       Look at picture 2-2 VTEP
   -----------------------------------------------------------------------------------------------------------
   
-
+2-3 VTEPs and NIC Teaming
+  NIC Teaming by Originating Port ID
+  NIC Teaming by Originating Port ID-Multiple VTEPs
