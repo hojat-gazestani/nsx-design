@@ -1,3 +1,4 @@
+
 3-1 Logical Switch Fundamentals
 3-2 Transport Zones
 3-3 NSX Controller Cluster
@@ -28,3 +29,30 @@
 3-2 Transport Zones
   picture     // 3-2 transport Zones
   
+--------------------------------------------------------------------------------------------------------------
+
+3-3 NSX Controller Cluster
+  provides interlligence and features to the logical Switch
+  Eliminates the need for Multicast configuration in the physical network
+    // VXLAN isnt just a VMware Technology. other vendors such as Cisco and Juniper support VXLAN, but they generally require multicast configuration
+  The NSX Controller reduces broadcast traffic by suppressing ARP requests     // multicast ??????????????????????
+  
+  MAC, ARP, VTEP Tables
+    show control-cluster logical-switches mac-table 5001
+    show control-cluster logical-switches arp-table 5001
+    show control-cluster logical-switches vtep-table 5001
+    
+  Populating the MAC Table
+  Populating the VTEP Table
+  Populating the ARP Table
+  
+  NSX Manager is used to deployed the NSX Controller Cluster
+    NSX Manager has the required OVF template built in
+  the NSX Conroller node must be deployed as a cluster
+  
+  the User World Agent (UWA) is used to communicate with hosts
+    the NSX Manager host preparation task enabled the VXLAN capability and established VTEPs
+    As VMs are connected to the network the UWA is used to inform the NSX controller and update the required table
+    all communications are SSL ecnrypted
+    Runs as a daemon on the hosts called netcpa
+    the UWA is not used to manage the distributed firewall. NSX Manager communicates with the vsfwd daemon directly
