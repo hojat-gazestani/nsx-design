@@ -1,10 +1,17 @@
 Virtual Networking
   VM
-  vNIC
-  Port Group
-  vmnic
-  vSphere Standard Switch
-  Physical Switch
+  vNIC                      // vm use this to send some packet to the network
+  Port Group                // define settings like VLAN membership, security policy, VM on same port group can commiunicate with each other without that trafic leaving the ESXi host
+  vmnic                     // Physical up-link, trafic need to send out external network or some VM on deffernt network
+  vSphere Standard Switch   // MTU = 9000
+  Physical Switch           // MTU = 1524 , so we need jumbo frame switch supported
+  
+  vm kernek                 // created on vStandard or vDistributed Switchs, it used for traffic like vMotion, ip storage, FT, VSAN, management
+    Management vmk0
+    vMotion vmk1
+    FT Logging vmk2
+  
+  
 vSphere Standard Switches
 vSphere Distributed Switches
 Virtual Switch Features
